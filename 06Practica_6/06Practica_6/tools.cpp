@@ -3,7 +3,7 @@
 
 int countWords(char *cad, const char* filename) {
 	int count = 0;
-	ifstream file("Read.txt");
+	ifstream file(filename);
 	char str[255];
 
 	while (file.getline(str, 255))
@@ -16,7 +16,7 @@ int countWords(char *cad, const char* filename) {
 }
 
 int sumNumbers(const char* filename) {
-	ifstream file("ReadNumbers.txt");
+	ifstream file(filename);
 	char str[255];
 	int sum = 0;
 	while (file.getline(str, 255))
